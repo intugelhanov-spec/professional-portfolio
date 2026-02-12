@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Erkanat Tugelhanov | Professional Portfolio</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style/style.css" />
+</head>
+<body>
+  <!-- Background blobs -->
+  <div class="bg">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+  </div>
+
+  <header class="header" id="top">
+    <div class="container nav">
+      <a class="logo" href="#top">ET</a>
+      <nav class="menu" id="menu">
+        <a href="#about">About</a>
+        <a href="#tracks">Tracks</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact" class="btn small">Contact</a>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="container hero">
+      <div class="hero-left">
+        <p class="tag">Professional portfolio on my specialty</p>
+        <h1>
+          I’m <span class="accent">Erkanat Tugelhanov</span> —
+          a Technical Physics MSc student exploring
+          <span class="accent">Science</span>, <span class="accent">Engineering</span>,
+          and <span class="accent">IT / Simulation</span>.
+        </h1>
+        <p class="subtitle">
+          My goal is to build a strong career by combining fundamental physics,
+          practical engineering thinking, and computational modeling tools.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn" href="#tracks">Explore my 3 tracks</a>
+          <a class="btn ghost" href="#projects">See projects</a>
+        </div>
+
+        <div class="quick">
+          <div class="chip">KazNU • Technical Physics</div>
+          <div class="chip">CFD / Simulation</div>
+          <div class="chip">Research mindset</div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <!-- Replace the image path with your photo -->
+        <div class="photo-card">
+          <img src="assets/profile.jpg" alt="Erkanat photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="photo-fallback" style="display:none;">
+            <div class="photo-card">
+              <img src="assets/profile.jpeg" alt="Erkanat Tugelhanov">
+            </div>
+          </div>
+          <div class="photo-badge">
+            <span class="dot"></span> Open to opportunities
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2>About</h2>
+        <p class="lead">
+          I earned my Bachelor’s degree in <b>Technical Physics</b> at <b>Al-Farabi Kazakh National University (KazNU)</b>
+          (2021–2025). I am currently a <b>1st-year Master’s student</b> at KazNU, continuing in the same field.
+        </p>
+        <p class="muted">
+          I enjoy understanding physical processes and turning them into models: from equations → simulations → results.
+          I’m especially interested in CFD, turbulence, flow structure, and how simulation supports real engineering decisions.
+        </p>
+      </div>
+    </section>
+
+    <!-- TRACKS -->
+    <section class="section" id="tracks">
+      <div class="container">
+        <h2>My future career in 3 tracks</h2>
+        <p class="lead">
+          I plan to develop my specialty in three directions: <b>Science</b>, <b>Engineering</b>, and <b>IT / Simulation Development</b>.
+        </p>
+
+        <div class="grid3">
+          <article class="card">
+            <div class="card-top">
+              <div class="icon">🔬</div>
+              <h3>1 — Scientific track</h3>
+            </div>
+            <p>
+              Focus on fundamental understanding, research methods, data analysis, and publishing results.
+              Interests: kinetic theory, transport phenomena, turbulence, and computational physics.
+            </p>
+            <ul class="mini">
+              <li>Reading papers & building theory</li>
+              <li>Model validation & interpretation</li>
+              <li>Clear scientific communication</li>
+            </ul>
+            <img src="assets/science.jpg" alt="Scientific research" class="track-img">
+          </article>
+
+          <article class="card highlight">
+            <div class="card-top">
+              <div class="icon">⚙️</div>
+              <h3>2 — Engineering track</h3>
+            </div>
+            <p>
+              Apply physics to real systems: mixing tanks, pipelines, energy systems, and industrial flows.
+              Goal: solve practical problems with reliable calculations and simulation.
+            </p>
+            <ul class="mini">
+              <li>Design thinking & constraints</li>
+              <li>CFD for decision-making</li>
+              <li>Efficiency and safety focus</li>
+            </ul>
+            <img src="assets/engineering.jpg" alt="Engineering systems" class="track-img">
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <div class="icon">💻</div>
+              <h3>3 — IT / Simulation developer</h3>
+            </div>
+            <p>
+              Build tools for modeling: scripts, automation, data pipelines, and web-based scientific portfolios.
+              Combine coding + physics for strong computational projects.
+            </p>
+            <ul class="mini">
+              <li>Python / numerical workflows</li>
+              <li>Visualization & reporting</li>
+              <li>Web portfolio & apps</li>
+            </ul>
+            <img src="assets/it.jpg" alt="IT development" class="track-img">
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+
+        <div class="grid2">
+          <article class="card wide">
+            <h3>Bachelor Thesis — CFD / SimFlow</h3>
+            <p class="muted">
+              <b>Modeling the impeller rotation in a cylindrical tank</b> to study the flow structure, turbulence characteristics,
+              and key hydrodynamic parameters using <b>SimFlow</b>.
+            </p>
+            <div class="tags">
+              <span>CFD</span><span>Mixing tank</span><span>Turbulence</span><span>Flow structure</span><span>SimFlow</span>
+            </div>
+          </article>
+
+          <article class="card wide">
+            <h3>Academic focus</h3>
+            <p class="muted">
+              I am strengthening my background in applied physics and computational modeling to support research and engineering tasks.
+              I aim to improve my scientific writing, presentation skills, and project documentation.
+            </p>
+            <div class="tags">
+              <span>Modeling</span><span>Analysis</span><span>Scientific communication</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <p class="lead">A short overview of tools and analytical skills I developed during my studies.</p>
+
+        <div class="grid3">
+          <article class="card">
+            <h3>Software tools</h3>
+            <p class="muted">
+              SimFlow (CFD), post-processing basics, reporting and documentation workflows.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Analytical skills</h3>
+            <p class="muted">
+              Interpreting numerical results, identifying trends, building logical explanations from data and physics.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>IT / Development</h3>
+            <p class="muted">
+              Portfolio development with HTML/CSS/JS, structured learning in web development, interest in automation scripting.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="lead">Leave a message — I will reply as soon as possible.</p>
+
+        <!-- This form is front-end only. You can connect it later to Formspree/Google Forms/etc -->
+        <form class="form" onsubmit="return false;">
+          <div class="row">
+            <input type="text" placeholder="Your name" />
+            <input type="email" placeholder="Your email" />
+          </div>
+          <textarea placeholder="Your message"></textarea>
+          <button class="btn" id="sendBtn" type="button">Send message</button>
+          <p class="hint" id="hint"></p>
+        </form>
+
+        <footer class="footer">
+          <span>© <span id="year"></span> Erkanat Tugelhanov</span>
+          <a href="#top">Back to top ↑</a>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
